@@ -39,6 +39,7 @@ echo "$header";
         <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
         <li  class="orbit-slide is-active">
           
+          
             <img src="<?php echo $MainMynd; ?>">
  <!--
         <li class="orbit-slide">
