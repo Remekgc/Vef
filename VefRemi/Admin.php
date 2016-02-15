@@ -28,6 +28,9 @@ include 'header.php';
 echo "$header";
 
 ?>
+<li class="orbit-slide">
+           
+        </li>
 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
     <ul class="orbit-container">
         <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
@@ -36,9 +39,7 @@ echo "$header";
           
             <img src="<?php echo $MainMynd; ?>">
  <!--
-        <li class="orbit-slide">
-            <img src="http://placehold.it/2000x750">
-        </li>
+        
         <li class="orbit-slide">
             <img src="http://placehold.it/2000x750">
         </li>
