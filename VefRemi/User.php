@@ -32,8 +32,7 @@ echo "$header";
 <div class="tabs">
     
                 <div class="tab">
-                    <input type="radio" id="tab-1" name="tab-group-1" checked>
-                    <label for="tab-1">Login</label>
+                    <label for="tab-1"><h3>Login</h3></label>
        
                     <div class="content">
                         <form class="pure-form">
@@ -42,21 +41,13 @@ echo "$header";
                                 <input type="text" class="pure-input-1-2" placeholder="Password">
                                 <input type="email" class="pure-input-1-2" placeholder="Email">
                             </fieldset>
-
-                            <fieldset class="pure-group">
-                                <input type="text" class="pure-input-1-2" placeholder="Another Group">
-                                <input type="text" class="pure-input-1-2" placeholder="More Stuff">
-                            </fieldset>
-
-                            <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+                            <button type="submit" class="BTNlog">Sign in</button>
                         </form>
                     </div> 
                 </div>
     
                 <div class="tab">
-                    <input type="radio" id="tab-2" name="tab-group-1">
-                    <label for="tab-2">Register</label>
-                   
+                    <label for="tab-2"><h3>Register</h3></label>               
                     <div class="content">
                         <form class="pure-form pure-form-aligned">
                             <div class="pure-control-group">
@@ -80,21 +71,11 @@ echo "$header";
                                     <input id="cb" type="checkbox"> I've read the terms and conditions
                                 </label>
 
-                                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                                <button type="submit" class="BTNreg">Register</button>
                             </div>
                         </form>
                     </div> 
                 </div>
-                
-                <div class="tab">
-                   <input type="radio" id="tab-3" name="tab-group-1">
-                   <label for="tab-3">Source</label>
-                 
-                   <div class="content">
-                       Þetta er motherfucking sourcið
-                   </div> 
-                </div>
-                
             </div>
 <?php
 

@@ -9,10 +9,37 @@ footer
 }
 .tab
 {
-	max-width: 50%;
 	text-align: center;
+	margin: 10px;
 }
 .mother
 {
 	text-align: center;
+}
+.content
+{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.BTNlog
+{
+	background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.BTNreg
+{
+	 background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
