@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -15,16 +16,12 @@
 include 'header.php';
 echo "$header";
 
+echo $_SESSION['userlogged'];
+echo $_SESSION['userpassword'];
+if (isset($_SESSION['userpassword'])) {
+    include 'upload.php';
+}
 ?>
-
-
-<div class="UploadBox">
-<?php
-
-include 'upload.php';
-
- ?>
-
 </div>
 <div class="row column text-center">
     <h2>Pics</h2>
