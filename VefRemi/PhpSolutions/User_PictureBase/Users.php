@@ -52,7 +52,6 @@
 		* @returns boolean
 		* @returns boolean
 		*/
-
 		public function newUser($first_name,$last_name,$user_email,$user_name,$user_pass)
 		{
 			$statement = $this->connection->prepare('call NewUser(?,?,?,?,?)');
@@ -70,7 +69,6 @@
 			}
 			catch(PDOException $e)
 			{
-				echo $e;
 				return false;
 			}
 		}
@@ -305,29 +303,7 @@
 			
 			return $ret;
 		}
-
-		/*public function getUserID($user_name,$user_pass)
-		{
-
-			$getUserName = "'" . $user_name . "'";
-			$getUserPass = "'" . $user_pass . "'";
-
-			$sql = 'SELECT userID FROM Users WHERE userName = $getUserName AND userPassword = $getUserPass;';
-			$query = $this->connection->prepare($sql);
-            try
-            {
-             $result = $this->connection->query($sql);
-            }
-            catch(PDOException $ex)
-            {
-              echo "Error fetching record: " . $e->getMessage();
-            }
-			while($row = $result->fetch())
-                    {
-                      echo $row[0];
-                    }
-      		}
 	
-		*/
+		
 	}
 ?>

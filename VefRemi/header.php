@@ -14,7 +14,6 @@ if ($activepage == 'index.php' ) {
         <ul class="menu">
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/Admin.php">Admin</a></li>
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/User.php">Guest(Login/Register)</a></li>
-            <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/PictureLibary.php">Picture Libary/Upload Photos</a></li>
         </ul>
     </div>
 </div>';
@@ -32,7 +31,6 @@ else if ($activepage == 'Admin.php')
         <ul class="menu">
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/index.php">Home</a></li>
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/User.php">Guest(Login/Register)</a></li>
-            <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/PictureLibary.php">Picture Libary/Upload Photos</a></li>
         </ul>
     </div>
 </div>';
@@ -50,7 +48,7 @@ else if ($activepage == 'User.php')
         <ul class="menu">
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/index.php">Home</a></li>
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/Admin.php">Admin</a></li>
-            <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/PictureLibary.php">Picture Libary/Upload Photos</a></li>
+           
         </ul>
     </div>
 </div>';
@@ -68,7 +66,6 @@ else if ($activepage == 'PictureLibary.php')
         <ul class="menu">
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/index.php">Home</a></li>
             <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/Admin.php">Admin</a></li>
-            <li><a href="http://tsuts.tskoli.is/2t/2601983359/VefRemi/PictureLibary.php">Picture Libary/Upload Photos</a></li>
         </ul>
     </div>
 </div>';

@@ -53,3 +53,12 @@ footer
 {
     color: white;
 }
+.tab1
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.rText
+{
+    color: black;
+}

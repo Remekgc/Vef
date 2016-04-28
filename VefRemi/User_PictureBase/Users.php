@@ -55,12 +55,13 @@
 
 		public function newUser($first_name,$last_name,$user_email,$user_name,$user_pass)
 		{
+			$user_pass = md5($user_pass);
 			$statement = $this->connection->prepare('call NewUser(?,?,?,?,?)');
 			$statement->bindParam(1,$first_name);
 			$statement->bindParam(2,$last_name);
 			$statement->bindParam(3,$user_email);
 			$statement->bindParam(4,$user_name);
-			$statement->bindParam(5,$user_pass);
+			$statement->bindParam(5,($user_pass));
 			
 			try 
 			{
@@ -70,7 +71,6 @@
 			}
 			catch(PDOException $e)
 			{
-				echo $e;
 				return false;
 			}
 		}
@@ -305,29 +305,7 @@
 			
 			return $ret;
 		}
-
-		/*public function getUserID($user_name,$user_pass)
-		{
-
-			$getUserName = "'" . $user_name . "'";
-			$getUserPass = "'" . $user_pass . "'";
-
-			$sql = 'SELECT userID FROM Users WHERE userName = $getUserName AND userPassword = $getUserPass;';
-			$query = $this->connection->prepare($sql);
-            try
-            {
-             $result = $this->connection->query($sql);
-            }
-            catch(PDOException $ex)
-            {
-              echo "Error fetching record: " . $e->getMessage();
-            }
-			while($row = $result->fetch())
-                    {
-                      echo $row[0];
-                    }
-      		}
 	
-		*/
+		
 	}
 ?>
